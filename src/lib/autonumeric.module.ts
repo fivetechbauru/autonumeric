@@ -18,7 +18,7 @@ export function defaultsFactory(userDefaults: AutonumericOptions): AutonumericDe
     exports: [AutonumericDirective]
 })
 export class AutonumericModule {
-    static forRoot(userDefaults: AutonumericOptions = {}): ModuleWithProviders {
+    static forRoot(userDefaults: AutonumericOptions = {}): ModuleWithProviders<any> {
         return {
             ngModule: AutonumericModule,
             providers: [
